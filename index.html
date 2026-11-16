@@ -313,7 +313,7 @@
 const pods = {
   1: {
     emoji: "🏭",
-    name: "Pod 1",
+    name: "부스 1번",
     label: "Digital Manufacturing · APM · PLM",
     desc: "스마트 생산라인 · 설비 지능화 · 제품 수명주기 관리 데모",
     color: "#0f6e56",
@@ -321,7 +321,7 @@ const pods = {
   },
   2: {
     emoji: "🌱",
-    name: "Pod 2",
+    name: "부스 2번",
     label: "Sustainability Solutions",
     desc: "탄소 발자국 자동 추적 · Green Ledger · ESG 규제 대응 데모",
     color: "#166534",
@@ -329,7 +329,7 @@ const pods = {
   },
   3: {
     emoji: "☁️",
-    name: "Pod 3",
+    name: "부스 3번",
     label: "Cloud ERP",
     desc: "SAP S/4HANA · IBP 통합 계획 · SAP Joule AI 데모",
     color: "#1a4fd6",
@@ -686,7 +686,7 @@ function submitForm() {
   btn.textContent = "제출 중...";
 
   const result    = getResultSummary();
-  const SHEET_URL = "https://script.google.com/macros/s/AKfycbxOCpdeuJCaGdmIk2xAJDWGVi2SeXvg7O7vvvag-a0e0TieDtelT-v8kn78ygtiIyNC/exec";
+  const SHEET_URL = "https://script.google.com/macros/s/AKfycbxp_12UZIukB3z1ASLaaWtS_fdZE1iShIJLpy1z4CBL_Fn_a8FlxuFIyDuxBGz96P8/exec";
   const params    = new URLSearchParams({
     company, name, dept, title, email, memo, ...result,
     q1: answers[0]||"", q2: answers[1]||"", q3: answers[2]||"",
