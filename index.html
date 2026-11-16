@@ -701,7 +701,7 @@ function submitForm() {
     document.getElementById("success-detail").innerHTML =
       `<strong>회사</strong> ${company} &nbsp;|&nbsp; <strong>담당자</strong> ${name}${dept ? " · " + dept : ""}${title ? " " + title : ""}<br>` +
       `<strong>이메일</strong> ${email}<br>` +
-      `<strong>진단 유형</strong> ${result.type_name} (${result.type_code}) &nbsp;|&nbsp; <strong>총점</strong> ${result.total > 0 ? "+" : ""}${result.total}`;
+      `<strong>진단 유형</strong> ${result.type_name} (${result.type_code})`;
     document.getElementById("modal-success-view").style.display = "block";
   }, 300);
 }
